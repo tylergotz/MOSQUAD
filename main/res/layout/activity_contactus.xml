@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/action_contactus"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:id="@+id/button"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address1"
+        android:textSize="18dp"
+        android:id="@+id/textView7"
+        android:layout_above="@+id/textView8"
+        android:layout_alignRight="@+id/gButton"
+        android:layout_alignEnd="@+id/gButton"
+        android:layout_marginBottom="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address2"
+        android:textSize="18dp"
+        android:id="@+id/textView8"
+        android:layout_above="@+id/phoneNumberTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phoneNumber"
+        android:textSize="16sp"
+        android:id="@+id/phoneNumberTV"
+        android:clickable="true"
+        android:onClick="call"
+        android:textColor="#0000ff"
+        android:layout_marginBottom="32dp"
+        android:layout_above="@+id/emailButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/email_icon"
+        android:id="@+id/emailButton"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/twitterButton"
+        android:background="@drawable/twitter_icon"
+        android:layout_marginBottom="12dp"
+        android:layout_alignBottom="@+id/emailButton"
+        android:layout_toRightOf="@+id/emailButton"
+        android:layout_toEndOf="@+id/emailButton" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/facebookButton"
+        android:background="@drawable/facebook_icon"
+        android:layout_alignTop="@+id/twitterButton"
+        android:layout_toLeftOf="@+id/gButton"
+        android:layout_toStartOf="@+id/gButton"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/gButton"
+        android:background="@drawable/google_plus_icon"
+        android:layout_alignTop="@+id/facebookButton"
+        android:layout_toRightOf="@+id/phoneNumberTV"
+        android:layout_toEndOf="@+id/phoneNumberTV" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/youtubeButton"
+        android:background="@drawable/youtube_icon"
+        android:layout_alignTop="@+id/gButton"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/view">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/addApp"
+            android:textColor="@color/orange"
+            android:id="@+id/textView14"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/names"
+            android:id="@+id/textView16"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/textView14"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14" />
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="First"
+            android:ems="10"
+            android:id="@+id/firstnameeditText"
+            android:layout_below="@+id/textView16"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignStart="@+id/textView16" />
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Last"
+            android:ems="10"
+            android:id="@+id/lastnameeditText"
+            android:layout_below="@+id/textView16"
+            android:layout_toRightOf="@+id/firstnameeditText"
+            android:layout_toEndOf="@+id/firstnameeditText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/licenseNum"
+            android:id="@+id/textView17"
+            android:layout_below="@+id/firstnameeditText"
+            android:layout_alignLeft="@+id/firstnameeditText"
+            android:layout_alignStart="@+id/firstnameeditText"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/licenseNumEditText"
+            android:layout_below="@+id/textView17"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/password"
+            android:textAllCaps="true"
+            android:id="@+id/textView19"
+            android:layout_below="@+id/licenseNumEditText"
+            android:layout_alignLeft="@+id/licenseNumEditText"
+            android:layout_alignStart="@+id/licenseNumEditText" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordEditTxt"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="@color/orange"
+            android:id="@+id/addAppButton"
+            android:layout_below="@+id/passwordEditTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp" />
+    </RelativeLayout>

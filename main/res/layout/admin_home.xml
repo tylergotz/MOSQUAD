@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="@string/applicators"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/appBtn"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Customers"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/custBtn"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/appBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Messages"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/adminMessagesBtn"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/custBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Spray Schedule"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/adminCalendarBtn"
+        android:layout_below="@+id/adminMessagesBtn"
+        android:layout_marginTop="21dp"
+        android:layout_alignLeft="@+id/adminMessagesBtn"
+        android:layout_alignStart="@+id/adminMessagesBtn" />
+
+</RelativeLayout>

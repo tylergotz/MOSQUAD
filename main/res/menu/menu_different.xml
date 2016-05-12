@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mosquitosquad.foxcities.mosquad.DifferencesActivity">
+
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="300"
+        android:title="Home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_locations"
+        android:orderInCategory="301"
+        android:title="@string/services"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/services"
+        android:orderInCategory="302"
+        android:title="@string/action_different"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/login"
+        android:orderInCategory="303"
+        android:title="@string/login"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_contactus"
+        android:orderInCategory="304"
+        android:title="@string/action_contactus"
+        app:showAsAction="never" />
+
+</menu>

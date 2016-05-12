@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:fillViewport="true">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/signup"
+                android:textColor="@color/orange"
+                android:id="@+id/signUpTextView"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="11dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/fName"
+                android:ems="10"
+                android:id="@+id/firstnameEditText"
+                android:layout_below="@+id/signUpTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/lName"
+                android:ems="10"
+                android:id="@+id/lastnameEditText"
+                android:layout_alignTop="@+id/firstnameEditText"
+                android:layout_toRightOf="@+id/firstnameEditText"
+                android:layout_toEndOf="@+id/firstnameEditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:hint="@string/streetAddress"
+                android:ems="10"
+                android:id="@+id/addressLine1EditText"
+                android:layout_below="@+id/firstnameEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/lastnameEditText"
+                android:layout_alignEnd="@+id/lastnameEditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:hint="@string/addressLine2"
+                android:ems="10"
+                android:id="@+id/adressLine2EditText"
+                android:layout_below="@+id/addressLine1EditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/addressLine1EditText"
+                android:layout_alignEnd="@+id/addressLine1EditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cityEditText"
+                android:hint="@string/city"
+                android:layout_below="@+id/adressLine2EditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/lastnameEditText"
+                android:layout_toStartOf="@+id/lastnameEditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stateEditText"
+                android:hint="@string/state"
+                android:layout_alignBottom="@+id/cityEditText"
+                android:layout_toRightOf="@+id/cityEditText"
+                android:layout_alignRight="@+id/adressLine2EditText"
+                android:layout_alignEnd="@+id/adressLine2EditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="5"
+                android:ems="10"
+                android:id="@+id/zipCodeEditText"
+                android:hint="@string/zipCode"
+                android:layout_below="@+id/cityEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/stateEditText"
+                android:layout_toStartOf="@+id/stateEditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/phoneEditText"
+                android:hint="@string/phoneNumberC"
+                android:layout_below="@+id/cityEditText"
+                android:layout_toRightOf="@+id/cityEditText"
+                android:layout_alignRight="@+id/stateEditText"
+                android:layout_alignEnd="@+id/stateEditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/registeremailEditText"
+                android:hint="@string/emailAddress"
+                android:layout_below="@+id/zipCodeEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/phoneEditText"
+                android:layout_alignEnd="@+id/phoneEditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/registerpasswordEditText"
+                android:hint="@string/password"
+                android:layout_below="@+id/registeremailEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/registeremailEditText"
+                android:layout_alignEnd="@+id/registeremailEditText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/confirmPasswordEditText"
+                android:hint="@string/confirmPassword"
+                android:layout_below="@+id/registerpasswordEditText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/registerpasswordEditText"
+                android:layout_alignEnd="@+id/registerpasswordEditText" />
+
+            <Button
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="@string/doneRegister"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/signUpBtn"
+                android:background="@color/orange"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/confirmPasswordEditText"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+</ScrollView>

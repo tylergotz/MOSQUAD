@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mosquitosquad.foxcities.mosquad.LoginActivity">
+
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="200"
+        android:title="Home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/services"
+        android:orderInCategory="201"
+        android:title="@string/services"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_different"
+        android:orderInCategory="202"
+        android:title="@string/action_different"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_locations"
+        android:orderInCategory="203"
+        android:title="@string/login"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_contactus"
+        android:orderInCategory="204"
+        android:title="@string/action_contactus"
+        app:showAsAction="never" />
+
+
+</menu>

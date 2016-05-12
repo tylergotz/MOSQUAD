@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.mosquitosquad.foxcities.mosquad.LinearLayoutListView
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/pane1">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="261dp"
+                android:id="@+id/spraysList" />
+
+        </com.mosquitosquad.foxcities.mosquad.LinearLayoutListView>
+
+
+        <com.mosquitosquad.foxcities.mosquad.LinearLayoutListView
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/pane2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Driver 1"
+                android:id="@+id/driver1Text"/>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:id="@+id/driverList1" />
+
+        </com.mosquitosquad.foxcities.mosquad.LinearLayoutListView>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <com.mosquitosquad.foxcities.mosquad.LinearLayoutListView
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/pane3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Driver 2"
+                android:id="@+id/driver2Text"/>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:id="@+id/driverList2" />
+
+        </com.mosquitosquad.foxcities.mosquad.LinearLayoutListView>
+        <com.mosquitosquad.foxcities.mosquad.LinearLayoutListView
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/pane4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Driver 3"
+                android:id="@+id/driver3Text"/>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:id="@+id/driverList3" />
+
+        </com.mosquitosquad.foxcities.mosquad.LinearLayoutListView>
+
+
+    </TableRow>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/goToMapBtn"
+        android:background="@color/colorPrimaryDark"/>
+
+
+</TableLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/fName"
+            android:ems="10"
+            android:id="@+id/custFName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/lName"
+            android:ems="10"
+            android:id="@+id/custLName"
+            android:layout_alignTop="@+id/custFName"
+            android:layout_toRightOf="@+id/custFName"
+            android:layout_toEndOf="@+id/custFName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:hint="@string/streetAddress"
+            android:ems="10"
+            android:id="@+id/custStreetAddress"
+            android:layout_below="@+id/custFName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/custLName"
+            android:layout_alignEnd="@+id/custLName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:hint="@string/addressLine2"
+            android:ems="10"
+            android:id="@+id/custAddress2"
+            android:layout_below="@+id/custStreetAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/custStreetAddress"
+            android:layout_alignEnd="@+id/custStreetAddress" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/custCity"
+            android:hint="@string/city"
+            android:layout_below="@+id/custAddress2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/custLName"
+            android:layout_toStartOf="@+id/custLName" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/custState"
+            android:hint="@string/state"
+            android:layout_alignBottom="@+id/custCity"
+            android:layout_toRightOf="@+id/custCity"
+            android:layout_alignRight="@+id/custAddress2"
+            android:layout_alignEnd="@+id/custAddress2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="5"
+            android:ems="10"
+            android:id="@+id/custZip"
+            android:hint="@string/zipCode"
+            android:layout_below="@+id/custCity"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/custState"
+            android:layout_toStartOf="@+id/custState" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/custPhone"
+            android:hint="@string/phoneNumberC"
+            android:layout_below="@+id/custCity"
+            android:layout_toRightOf="@+id/custCity"
+            android:layout_alignRight="@+id/custState"
+            android:layout_alignEnd="@+id/custState" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/custEmail"
+            android:hint="@string/emailAddress"
+            android:layout_below="@+id/custZip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/custPhone"
+            android:layout_alignEnd="@+id/custPhone" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/updateBtn"
+            android:background="@color/orange"
+            android:layout_below="@+id/custEmail"
+            android:layout_toLeftOf="@+id/deleteBtn"
+            android:layout_toStartOf="@+id/deleteBtn"
+            android:layout_marginTop="67dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/deleteBtn"
+            android:background="@color/orange"
+            android:layout_alignTop="@+id/updateBtn"
+            android:layout_toRightOf="@+id/custZip"
+            android:layout_toEndOf="@+id/custZip" />
+    </RelativeLayout>
+</ScrollView>
